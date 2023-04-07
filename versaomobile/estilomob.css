@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin-top: 7.2rem;
+}
+
+ul li {
+    font-weight: 700;
+    font-size: 2,4px;
+    line-height: 3.2rem;
+    color:#090039;
+    max-width: 25.7rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3.8rem;
+}
+
+ul li span {
+    font-weight: 800;
+    font-size: 7.3rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+    color: #090039;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: #ECE9FD;
+    padding: 6.0rem 2.3rem 6.6rem;
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 33.0rem;
+    margin: 0 auto; /*para a caixa main alinhar ao meio da tela*/
+}
+
+:root {
+    /*REM = Root EM*/
+/* 1rem = 16px */
+    font-size: 62.5%; /*isso equivale a 10 pixels, entao, ao inves de dividir o valor dos px por 16, voce apenas 
+    coloca um ponto entre os dois numeros. Ex: 40px = 4.0rem.*/
+}
+
+
+h1 {
+    font-weight: 800;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    color: #090039;
+
+    margin-bottom: 1.5rem;
+}
+
+
+h1 + p { /*essa expressao h1 + p, se refere ao fato de que estamos querendo editar o p que vem anteriormente ao h1.*/
+
+    color: rgba(10, 0, 57, 0.64);
+    line-height: 3.2rem;
+
+    margin-bottom: 3.2rem;
+    
+
+}
+
+
+a {
+    color: #090039;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+
+
+main p:first-child {/*aqui, eu quero editar apenas o primeiro 'p' dentro do 'main', entao eu uso o 'main p:first-child'.*/
+    color: #7158EF;
+    letter-spacing: 3px; /*aqui é o espaço entre linhas. Quando a unidade é muito pequena, utiliza-se pixels ao invés de rem*/
+    text-transform: uppercase;
+    line-height: 3.2rem;
+
+    margin-bottom: 1.7rem;
+
+}
